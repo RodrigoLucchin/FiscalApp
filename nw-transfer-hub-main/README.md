@@ -1,73 +1,38 @@
-# Welcome to your Lovable project
+# FiscalApp
 
-## Project info
+Aplicação Fiscal NW Drones — interface para visualizar preços de custo, NFe e integração Omie.
 
-**URL**: https://lovable.dev/projects/fa3f3d7a-4897-43ff-8a87-fac04fbeb682
+## Como rodar localmente
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/fa3f3d7a-4897-43ff-8a87-fac04fbeb682) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+Pré-requisitos: Node.js e npm
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Variáveis de ambiente
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Crie um arquivo `.env` na raiz (não commite). Exemplo de conteúdo:
 
-**Use GitHub Codespaces**
+```
+VITE_SUPABASE_URL=https://your-supabase-url
+VITE_SUPABASE_KEY=your-public-anon-key
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Obs: `.env` já está listado em `.gitignore`.
 
-## What technologies are used for this project?
+## Estrutura
 
-This project is built with:
+- `src/pages/PrecosCusto.tsx` — página de preços de custo e seleção de itens
+- `src/lib/supabase.ts` — cliente Supabase
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Envio para o GitHub
 
-## How can I deploy this project?
+Repositório criado por script. Após clonar, adicione seu `.env` e rode `npm install`.
 
-Simply open [Lovable](https://lovable.dev/projects/fa3f3d7a-4897-43ff-8a87-fac04fbeb682) and click on Share -> Publish.
+## Licença
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Coloque aqui sua licença ou mantenha como privado.
