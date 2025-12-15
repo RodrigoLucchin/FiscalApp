@@ -17,7 +17,7 @@ const menuItems = [
   { title: "Sistema Futuro", url: "/app", icon: ArrowLeftRight },
   { title: "Controle de Seriais", url: "/controle-seriais", icon: Package },
   { title: "Custos", url: "/custos", icon: DollarSign },
-  { title: "Sistema de Transferência", url: "/transferencia", icon: Repeat, comingSoon: true },
+  { title: "Sistema de Transferência", url: "/transferencia", icon: Repeat },
 ];
 
 export function AppSidebar() {

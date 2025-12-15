@@ -11,6 +11,7 @@ import Index from "./pages/Index";
 import SerialControl from "./pages/SerialControl";
 import Custos from "./pages/Custos";
 import PrecosCusto from "./pages/PrecosCusto";
+import Transferencia from "./pages/Transferencia";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -51,6 +52,7 @@ const AppLayout = () => {
             <Route path="/controle-seriais" element={<SerialControl />} />
             <Route path="/custos" element={<Custos />} />
             <Route path="/custos/precos-custo" element={<PrecosCusto />} />
+              <Route path="/transferencia" element={<Transferencia />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
